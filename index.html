@@ -5,10 +5,37 @@
 	    <title>The easy website</title>
 	</head>
 	
-	<body>
-	    <div style="text-align: center"id="square"><strong><h1>學習製作一個簡單的網站</h1></strong></div>
-	    <hr>
-	    <h2></h2>
+	<body style="background-color: cornsilk">
+	    <div class="bi" style="text-align: center"id="square"><strong><h1>學習製作一個簡單的網站</h1></strong></div>
+        <hr>
+	    <div class="ai" id="circle"> 首次嘗試</div>
+        
+        <br>
+        <p  style="padding-top: 200px;"></p>
+        <hr>
+        <h1 class="ci">從頭開始建設網站</h1>
+        <hr>
+        <p class="di">1.學習過程</p>
+        <p class="ei">(1)我使用freecode這個網站來學習基本網路架設</p>
+        <br>
+        <p style="text-align: center"><a href="https://auth.freecodecamp.org/" style="font-size: 30px">freecode網站</a></p>
+        <br>
+        <img class="fi" src="FREECODE.png" >
+        <br>
+        <p class="ei">(2)花了五周時間成功取得證書</p>
+        <img class="gi" src="IMG_20201119_182405.png">
+        <hr>
+        <p class="di">2.開始嘗試架設網站</p>
+        <hr>
+        <p class="ei">(1)使用程式brackets架設網站</p>
+        <p style="text-align: center"><a href=http://brackets.io/ style="font-size: 30px">Brackets網站</a></p>
+        <img class="gi" src="%E6%9C%AA%E5%91%BD%E5%90%8D.png">
+        
+        
+        
+        
+        
+        
 	    
 	    
 	    
@@ -29,21 +56,97 @@
             position: relative;
             animation-iteration-count: 1;  
         }
-        
         @keyframes h{
             0%{
                 
                 left: -500px;
                 
-            }
-             100%{
+                }
+            100%{
                 
                 left: 500px;
                 animation-delay: 1s;
+                }
+                    }       
+        #circle{
+            width: 225px;
+            height: 80px;
+            animation-name: bounce;
+            animation-duration: 6s;
+            animation-delay: 0s;
+            font-size: 50px;
+            background-color:aqua;
+            position: relative;
+            animation-iteration-count: infinite;
+            border-radius: 10px 50px;
+            
             }
-            
-            
+         @keyframes bounce{
+                0%{
+                    background-color:aqua;
+                    top:100px;
+                    left:3%;
+                }
+                25%{
+                    background-color:cyan;
+                    left:50%;
+                    top:0px
+                }
+                50%{
+                    background-color:dodgerblue;
+                    top:100px;
+                    left:88%;
+                }
+                75%{
+                    background-color:darkturquoise;
+                    left:50%;
+                    top:250px;    
+                }
+                100%{
+                    background-color:deepskyblue;
+                    top:100px;
+                    left:3%;
+                    animation-delay: 1s;
+                }
+                }
+         } 
+         
+        .ai{
+            text-align: center;
+            font-size: 20px;
         }
+        .bi{
+            background-color: cornflowerblue;
+        }
+        .ci{
+            font-size: 50px;
+            font-style:italic;
+            color: deeppink;
+            text-align: center;
+        }
+        .di{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .ei{
+            font-size: 30px;
+            text-align: center;
+        }
+        .fi{
+                width: 500px;
+                display: block;
+                margin: auto;
+            }
+         .gi{
+                width: 800px;
+                display: block;
+                margin: auto;
+            }
+
+
+            
+            
+        
         
     
     
